@@ -4,7 +4,7 @@
     <h1>{{ title }}</h1>
      <v-select label="name" :filterable="false"
       @close="onClose"
-      :options="options" @search="fetchOptions" v-on:search:focus="focused">
+      :options="options" @search="fetchOptions">
       <template slot="no-options">
         type to search GitHub repositories..
       </template>
